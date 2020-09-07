@@ -1,7 +1,7 @@
 html{
     scroll-behavior: smooth;
 }
-/* #home{ 
+#home{ 
     background-image: url(./images/pixel\ 7.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -66,4 +66,4 @@ h3{
 #footer{
     background-color:rgb(104, 53, 53) ;
     color: white;
-} */
+}
