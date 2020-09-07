@@ -1,0 +1,11 @@
+#home{
+    background-image: url(./images/pixel\ 7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.logo1 img{
+    height: 10rem;
+}
+#aboutus
