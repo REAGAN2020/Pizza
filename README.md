@@ -18,7 +18,7 @@ A web application where your customers order different sizes of pizzas with one 
 
 ## Demo
 
-Here is a working live demo :
+Here is a working live demo :https://reagan2020.github.io/Pizza/
 
 ### Development
 
