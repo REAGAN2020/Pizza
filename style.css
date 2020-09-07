@@ -1,11 +1,69 @@
-#home{
+html{
+    scroll-behavior: smooth;
+}
+/* #home{ 
     background-image: url(./images/pixel\ 7.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
+    background-position:center;
+    position: relative;
+    
 }
 .logo1 img{
     height: 10rem;
 }
-#aboutus
+.button{
+    background-color: rgb(182, 164, 61);
+    height: 4rem;
+    width: 13rem;
+    border: 5rem;  
+}
+#about{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(./images/pizza\ 1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 620px;
+    position: relative;
+}
+.text{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    word-spacing: normal;
+}
+.logo2 img{
+    height: 8rem;
+}
+#about p{
+ 
+    text-align: center;
+}
+h1{
+    font-family: 'Ultra', serif;
+}
+h3{
+    font-family: 'Ultra', serif;
+}
+#menu{
+
+}
+.btn{
+    background-color: rgb(189, 60, 60);
+    color: white;
+}
+#orders{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url(./images/hawaian\ pizza.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:100vh;
+    position: relative;
+}
+#footer{
+    background-color:rgb(104, 53, 53) ;
+    color: white;
+} */
