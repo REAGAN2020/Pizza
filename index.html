@@ -37,8 +37,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#footer">Contact Us</a>
                     </li>
-                    
-
                 </ul>
             </div>
         </nav>
@@ -89,7 +87,6 @@
                     linger over a cozy dinner.
                 </p>
             </div>
-
         </div>
         <!---end of about-->
 
@@ -210,92 +207,55 @@
     <!--end of Menu--->
 
     <!---Order's--->
-<div id="orders" class="orders"><br><br>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-5 p-2">
-                <h3 class="text-center text-white">PLace Your Orders</h3>
-                 <select class="form-control form-control-sm" id="type">
-                    <option class="text-center" value="default">
-                        <h3><strong>🍕Select Pizza Type🍕</strong></h3>
-                    </option>
-                    <option value="BBQ chicken pizza.">BBQ chicken pizza.</option>
-                    <option value="Veggie pizza.">Veggie pizza.</option>
-                    <option value="The work Pizza.">The work Pizza.</option>
-                    <option value="Buffalo-Chicken.">Buffalo-Chicken.</option>
-                    <option value="Pepperoni Pizza.">Pepperoni Pizza.</option>
-                    <option value="Billy Cullen">Billy Cullen</option>
-                </select> <br>
-                <select class="form-control form-control-sm" id="size">
-                    <option class="text-center">
-                        <h3><strong>Select Piece Size👨🏽‍🍳</strong></h3>
-                    </option>
-                    <option value="large">Large @Ksh.900</option>
-                    <option value="medium">Medium @Ksh.500</option>
-                    <option value="small">Small @Ksh.300/option>
-                </select> <br>
-                <select class="form-control form-control-sm" id="crust">
-                    <option class="text-center">
-                        <h3> <strong>Select Crust</strong></h3>
-                    </option>
-                    <option value="cheese">Cheese-Stuffed Crust @Ksh.100 </option>
-                    <option value="thin">Thin Crust @Ksh.70</option>
-                    <option value="neapolitan">Neapolitan Crust @Ksh.120</option>
-                </select><br>
-
-                <select id="toppings" class="form-control form-control-sm">
-                    <option value="default">Choose a prefferable topping</option>
-                    <option value="Pepperoni">Pepperoni. @Ksh.10</option>
-                    <option value="Mushrooms">Mushrooms. @Ksh.40</option>
-                    <option value="Onions">Onions. @Ksh.15</option>
-                    <option value="Sausage">Sausage. @Ksh.20</option>
-                    <option value="Bacon">Bacon. @Ksh.30</option>
-                    <option value="Extra-cheese">Extra cheese. @Ksh10</option>
-                    <option value="Black-olives">Black olives. @Ksh.15</option>
-                    <option value="Green-peppers">Green peppers. @Ksh.5</option>
-                </select><br>
-
-                <div class="quantity">
-                    <input value="" type="number" name="number" id="quantity" placeholder="Choose Quantity eg 2">
-                </div><br><br>
-                &nbsp; &nbsp; &nbsp; <button type="submit" id="checkout" class="btn btn-success">Place
-                    Order</button>
-                &nbsp; &nbsp; &nbsp; <button type="reset" id="" class="btn btn-danger">Clear Order</button>
-            </div> 
-
-            <display summary on a table  --></display>
-             <div class="container-fluid col-md-7 p-2 summation">
-                <div class="container-fluid summarypreview p-2">
-                    <h5 class="text-white text-center">Total summation of your order.</h5>
-                    <table class="table table-sm p-2">
-                        <thead class="text-light">
-                            <tr>
-                                <th scope="col">Name</th>
-                                <th scope="col">Size</th>
-                                <th scope="col">Crust</th>
-                                <th scope="col">Topping</th>
-                                <th scope="col">Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td id="ptype"></td>
-                                <td id="psize"></td>
-                                <td id="cprice"></td>
-                                <td id="tprice"></td>
-                                <td id="summation"></td>
-                            </tr>
-                        </tbody>
-                    </table><br>
-                    <h6 class="delivery"><strong>For home/to door delivery @ksh.100</strong></h6>
-                    <button id="final" value="true" type="submit" class="btn btn-success">Checkout</button>
-                    <button id="delivery" type="submit" class="btn btn-success">Delivery</button>
-                </div>
+    <div id="orders" class="orders"><br><br>
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-md-6">
+                <h3>Enter your order details below <br>
+                    Fill in the form </h3>
+                <form action="" id="pizzainfo">
+                    <label for="">Choose your pizza size</label>
+                    <select class="form-control" name="size" id="size">
+                        <option value="1200">Large @ ksh 900</option>
+                        <option value="900">Medium @ ksh 500</option>
+                        <option value="600">Small @ ksh 300</option>
+                    </select>
+                    <label for="">Choose your desired crust type</label>
+                    <select class="form-control" name="" id="crust" required>
+                        <option value="230" name="crust">stuffed crust @ ksh230
+                        <option value="250" name="crust">Crispy @ ksh 250
+                        <option value="300" name="crust">Glutten free @ ksh 300
+                    </select>
+                    <label for="">Choose your Desired toppings</label> <br>
+                    <input value="150" type="checkbox" id="toppingone">Mushrooms
+                    <input value="150" type="checkbox" id="toppingone">Sausage
+                    <input value="150" type="checkbox" id="toppingone">Onions
+                    <input value="150" type="checkbox" id="toppingone">Tikka Sauce
+                    <input value="150" type="checkbox" id="toppingone">Mozarella Cheese
+            
+                    <label for="Quantity">Input Quantity</label><br><br>
+                    <input class="form-control form-group" type="text" id="numberofpizza">
+                    <button name="button" class="button" type="submit" id="submit" value="Check-Out" onclick="calctotalPrice()">Order</button>
+                </form>
             </div>
-        </div>
+            
+            <div class="col-md-6">
+                <!-- <div id="formlocation">
+                    <h3>For delivery services,enter your location details below</h3>
+                    <form id="delivery">
+                        <label for="name">Name</label>
+                        <input class="form-control" type="text" name="" id="name" required="required">
+                        <label for="location">Location</label>
+                        <input class="form-control" type="text" id="location" placeholder="location...">
+                        <label for="phonenumber">Phone Number</label>
+                        <input class="form-control" type="tel" placeholder="07xxxxxxxx" id="number"> <br>
+                        <button type="submit" class="button" name="button" id="submit">Order</button>
+                    </form>
+                </div> -->
+            </div>
+        </div> <br>
+    </div> <br><br>
     </div> <br>
-</div> <br><br>
-</div> <br> 
     <!--- end of Order's--->
 
     <!---footer-->
@@ -402,6 +362,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
+<script src="./js/script.js"></script>
 
 </html>
